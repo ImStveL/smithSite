@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Smiths really cool website that he made!!! :D </title>
+    <style>
+      body {
+        background-color: rgb(22, 22, 22);
+      }
+
+      p {
+        color: rgb(206, 206, 206);
+      }
+
+      .u {
+        padding: 6px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(228, 228, 228);
+        border-color: cadetblue;
+        border-width: 4px;
+        border-radius: 12%;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .u:hover {
+        background-color: rgb(179, 179, 179);
+        color: rgb(51, 51, 51);
+        border-width: 6px;
+        transition: all 0.2s;
+      }
+
+      .gg{
+        color: rgb(236, 236, 236);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gg" id="5">DONT PRESS THAT BUTTON!!</div>
+    <input type="text" id="tom" placeholder="Im just here">
+    <button class="u" id="button">Why not?</button>
+    <script>
+        var swatch = true;
+
+        const ok = document.getElementById("5");
+        const no = document.getElementById('button');
+        const idk = document.getElementById('tom')
+
+            no.onclick = function() {
+            //let lmao = idk.value;
+            //ok.innerText = lmao;
+            
+            
+            // SMITH'S COOL CODE!
+            
+            if (swatch) {
+                swatch = false;
+                ok.innerText = 'DONT PRESS THAT BUTTON!!';
+                no.innerText = 'Why not?';
+                
+            }
+            else {
+                swatch = true;
+                ok.innerText = 'GOD DAMMIT WHAT DID I JUST SAY!?!?!';
+                no.innerText = 'im sorry...';
+            }
+                
+        }
+            
+    </script>
+  </body>
+</html>
